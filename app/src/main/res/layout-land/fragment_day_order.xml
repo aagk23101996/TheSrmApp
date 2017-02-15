@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:id="@+id/appbarlayout"
+        android:fitsSystemWindows="true"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/collapsing"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:expandedTitleMarginStart="48dp"
+            android:fitsSystemWindows="true"
+            app:expandedTitleMarginEnd="64dp"
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:id="@+id/toolbar"
+                app:layout_collapseMode="pin"
+                android:layout_height="?attr/actionBarSize"
+                ></android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:nestedScrollingEnabled="true"
+        android:background="#000000"
+        android:fillViewport="true"
+        android:id="@+id/nestedscroll"
+
+        app:layout_behavior="com.evs.demo.layout.FixedScrollingViewBehavior"
+        android:layout_height="280dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/txt1"
+                   android:textColor="#FFFFFF"
+
+                   style="?android:listSeparatorTextViewStyle"
+
+                   android:layout_gravity="center_horizontal"
+                   />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <Button
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="250dp"
+                    android:elevation="4dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/button1"
+                    android:text="Choose the subject"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="sans-serif-light"
+                    android:background="@drawable/shape"
+                    />
+                    <Button
+                        android:layout_marginLeft="110dp"
+                        android:layout_width="250dp"
+                        android:elevation="4dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/freebutton1"
+                        android:text="Free Hour"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="sans-serif-light"
+                        android:background="@drawable/shape"
+                        />
+</LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFFFF"
+                    android:layout_marginTop="8dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt2"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center_horizontal"
+                    style="?android:listSeparatorTextViewStyle"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="250dp"
+                        android:elevation="4dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/button2"
+                        android:text="Choose the subject"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="sans-serif-light"
+                        android:background="@drawable/shape"
+                        />
+                    <Button
+                        android:layout_marginLeft="110dp"
+                        android:layout_width="250dp"
+                        android:elevation="4dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/freebutton2"
+                        android:text="Free Hour"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="sans-serif-light"
+                        android:background="@drawable/shape"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFFFF"
+                    android:layout_marginTop="8dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt3"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center_horizontal"
+                    style="?android:listSeparatorTextViewStyle"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="250dp"
+                        android:elevation="4dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/button3"
+                        android:text="Choose the subject"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="sans-serif-light"
+                        android:background="@drawable/shape"
+                        />
+                    <Button
+                        android:layout_marginLeft="110dp"
+                        android:layout_width="250dp"
+                        android:elevation="4dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/freebutton3"
+                        android:text="Free Hour"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="sans-serif-light"
+                        android:background="@drawable/shape"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFFFF"
+                    android:layout_marginTop="8dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt4"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center_horizontal"
+                    style="?android:listSeparatorTextViewStyle"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="250dp"
+                        android:elevation="4dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/button4"
+                        android:text="Choose the subject"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="sans-serif-light"
+                        android:background="@drawable/shape"
+                        />
+                    <Button
+                        android:layout_marginLeft="110dp"
+                        android:layout_width="250dp"
+                        android:elevation="4dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/freebutton4"
+                        android:textColor="#FFFFFF"
+                        android:text="Free Hour"
+                        android:fontFamily="sans-serif-light"
+                        android:background="@drawable/shape"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFFFF"
+                    android:layout_marginTop="8dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt6"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center_horizontal"
+                    style="?android:listSeparatorTextViewStyle"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="250dp"
+                        android:elevation="4dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/button6"
+                        android:text="Choose"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="sans-serif-light"
+                        android:background="@drawable/shape"
+                        />
+                    <Button
+                        android:layout_marginLeft="110dp"
+                        android:layout_width="250dp"
+                        android:elevation="4dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/freebutton6"
+                        android:text="Free Hour"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="sans-serif-light"
+                        android:background="@drawable/shape"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFFFF"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt7"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center_horizontal"
+                    style="?android:listSeparatorTextViewStyle"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="250dp"
+                        android:elevation="4dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/button7"
+                        android:text="Choose the subject"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="sans-serif-light"
+                        android:background="@drawable/shape"
+                        />
+                    <Button
+                        android:layout_marginLeft="110dp"
+                        android:layout_width="250dp"
+                        android:elevation="4dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/freebutton7"
+                        android:text="Free Hour"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="sans-serif-light"
+                        android:background="@drawable/shape"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFFFF"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt8"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center_horizontal"
+                    style="?android:listSeparatorTextViewStyle"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="250dp"
+                        android:elevation="4dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/button8"
+                        android:text="Choose the subject"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="sans-serif-light"
+                        android:background="@drawable/shape"
+                        />
+                    <Button
+                        android:layout_marginLeft="110dp"
+                        android:layout_width="250dp"
+                        android:elevation="4dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/freebutton8"
+                        android:text="Free Hour"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="sans-serif-light"
+                        android:background="@drawable/shape"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFFFF"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt9"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center_horizontal"
+                    style="?android:listSeparatorTextViewStyle"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="250dp"
+                        android:elevation="4dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/button9"
+                        android:text="Choose the subject"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="sans-serif-light"
+                        android:background="@drawable/shape"
+                        />
+                    <Button
+                        android:layout_marginLeft="110dp"
+                        android:layout_width="250dp"
+                        android:elevation="4dp"
+                        android:textColor="#FFFFFF"
+                        android:layout_height="40dp"
+                        android:id="@+id/freebutton9"
+                        android:text="Free Hour"
+                        android:fontFamily="sans-serif-light"
+                        android:background="@drawable/shape"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFFFFF"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt10"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center_horizontal"
+                    style="?android:listSeparatorTextViewStyle"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_marginLeft="16dp"
+                        android:layout_width="250dp"
+                        android:elevation="4dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/button10"
+                        android:text="Choose the subject"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="sans-serif-light"
+                        android:background="@drawable/shape"
+                        />
+                    <Button
+                        android:layout_marginLeft="110dp"
+                        android:layout_width="250dp"
+                        android:elevation="4dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/freebutton10"
+                        android:text="Free Hour"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="sans-serif-light"
+                        android:background="@drawable/shape"
+                        />
+                </LinearLayout>
+
+            <Button
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:text="Done"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/shapes1"
+                android:layout_gravity="bottom|end"
+                android:id="@+id/buttonclicked"/>
+
+</LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

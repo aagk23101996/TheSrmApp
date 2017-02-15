@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_edit"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="abhishekagarwal371.thesrmapp.EditActivity">
+
+<android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#ffb74d"
+
+    android:id="@+id/toolback"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        android:background="#ffb74d"
+
+        android:text="Edit Options"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:transitionName="@string/transitioname"
+        android:textColor="#afff"
+        tools:targetApi="lollipop" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="vertical"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="80dp"
+        android:background="#bbb">
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/day_order"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        android:layout_marginEnd="90dp"
+        android:background="#ccc">
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/hr_no"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        android:layout_marginEnd="60dp"
+        android:background="#ccc">
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:text="Choose the Subject"/>
+        </LinearLayout>
+    <LinearLayout
+        android:paddingTop="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_marginLeft="16dp"
+            android:layout_width="140dp"
+            android:elevation="4dp"
+            android:layout_height="30dp"
+            android:id="@+id/buttonclickme"
+            android:text="Choose Sub"
+            android:textColor="#FFFFFF"
+            android:onClick="clicked"
+            android:fontFamily="sans-serif-light"
+            android:background="@drawable/shape"
+            />
+        <Button
+            android:layout_marginLeft="32dp"
+            android:layout_width="140dp"
+            android:elevation="4dp"
+            android:layout_height="30dp"
+            android:onClick="clicked"
+            android:id="@+id/buttonclicked2"
+            android:text="Free Hour"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-light"
+            android:background="@drawable/shape"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:orientation="vertical"
+        android:layout_marginTop="14dp"
+
+        android:background="#ccc">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="OR"/>
+        </LinearLayout>
+
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:maxLength="13"
+            android:hint="Enter Subject Name"
+        android:id="@+id/edittext1"/>
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Room No"
+        android:maxLength="13"
+        android:id="@+id/edittext2"/>
+
+</LinearLayout>

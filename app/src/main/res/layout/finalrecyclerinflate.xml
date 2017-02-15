@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#FFFFFF"
+    android:layout_margin="5dp"
+    android:elevation="3dp"
+    card_view:cardCornerRadius="0dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+
+            >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="30dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="sans-serif-medium"
+
+        android:id="@+id/textinput2"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:gravity="center"
+android:layout_marginTop="90dp"
+        android:fontFamily="sans-serif-regular"
+
+        android:id="@+id/textinput3"
+
+        />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+android:gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginTop="120dp"
+                android:id="@+id/textinput4"
+
+                />
+            </FrameLayout>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#691A99"
+            android:orientation="horizontal">
+        <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="40dp"
+
+      android:textColor="#FFFFFF"
+      android:gravity="center"
+      android:id="@+id/textinput1"
+      />
+<ImageView
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+android:layout_marginLeft="80dp"
+    android:id="@+id/imgedit"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+    app:srcCompat="@drawable/ic_dots"
+    android:tint="#FFFFFF"
+    />
+</LinearLayout>
+</LinearLayout>
+    </android.support.v7.widget.CardView>
+    </LinearLayout>

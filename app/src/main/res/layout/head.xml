@@ -1,12 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="200dp">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/imagehead"
         android:src="@drawable/header"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
         />
+    <ImageButton
+        android:layout_width="80dp"
+        android:id="@+id/imageb"
+        app:srcCompat="@drawable/ic_person_black_24dp"
+        android:tint="#FFFFFF"
+        android:scaleType="fitCenter"
+        android:elevation="8dp"
+        android:adjustViewBounds="true"
+        android:layout_height="80dp"
+        android:background="@drawable/shapes2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="48dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:visibility="gone"
+        android:layout_marginTop="144dp"
+        android:id="@+id/txtName"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="sans-serif-regular"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="168dp"
+        android:id="@+id/txtEmail"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:id="@+id/textlogin"
+        android:layout_marginTop="132dp"
+        android:layout_marginLeft="36dp"
+        android:text="Log In"/>
 
 
-</LinearLayout>
+</FrameLayout>

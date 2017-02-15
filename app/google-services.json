@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1080378130373",
+    "project_id": "firebase-thesrmapp"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080378130373:android:b7bb62791c486f67",
+        "android_client_info": {
+          "package_name": "abhishekagarwal371.thesrmapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1080378130373-tk5jgbn1ldislaupugkagie9s799c7an.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "abhishekagarwal371.thesrmapp",
+            "certificate_hash": "3829BEA2CBD386253871CF0A1E36821FD30FC6EE"
+          }
+        },
+        {
+          "client_id": "1080378130373-u2oj2r67vfbnvo9taecaki69t7f6hc8g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAX5-cwkvLDEgvRPo38EHFsZuyCLj7A6dY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

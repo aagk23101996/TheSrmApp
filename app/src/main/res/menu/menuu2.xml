@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_action_web"
+            android:id="@+id/academia1"
+            android:title="Academia"/>
+
+        <item android:title="Edit Subjects"
+            android:id="@+id/edit_sub"
+            android:icon="@drawable/ic_action_subjects"/>
+        <item android:id="@+id/new_timetable"
+            android:title="Add a new timetable"
+            android:icon="@drawable/ic_action_diffsub"/>
+
+        <item android:title="Sign Out"
+            android:id="@+id/sign_out"
+            android:icon="@drawable/ic_action_signout"/>
+
+<item android:title="Login with different Account"
+    android:id="@+id/log_in_diff"
+    android:icon="@drawable/ic_action_diff"
+    />
+
+    </group>
+
+
+</menu>

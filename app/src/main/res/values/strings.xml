@@ -3,4 +3,9 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="transitioname">hero</string>
+    <string name="banner_ad_unit_id">ca-app-pub-6810089401274880/5923883055</string>
+    <string name="loading">Loading</string>
+    <string name="banner_home_footer">ca-app-pub-0664570763252260/3326522424</string>
+    <string name="interstitial_full_screen">ca-app-pub-3940256099942544/1033173712</string>
 </resources>

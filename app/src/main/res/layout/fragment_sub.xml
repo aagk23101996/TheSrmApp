@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="abhishekagarwal371.thesrmapp.SubFrag">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="256dp"
+
+
+    android:orientation="vertical"
+    android:background="#3F51B5">
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit1"
+        app:met_baseColor="#FFFFFF"
+        app:met_primaryColor="#CE93D8"
+        app:met_minCharacters="1"
+        app:met_maxCharacters="10"
+        android:maxLength="13"
+        app:met_errorColor="#F44336"
+        app:met_floatingLabel="highlight"
+        app:met_singleLineEllipsis="true"
+        android:hint="Subject Name"
+        android:textSize="50dp"
+        />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Room No"
+
+        android:maxLength="13"
+        app:met_baseColor="#FFFFFF"
+        app:met_singleLineEllipsis="true"
+        app:met_minCharacters="1"
+        app:met_maxCharacters="10"
+        app:met_errorColor="#F44336"
+        app:met_primaryColor="#CE93D8"
+        app:met_floatingLabel="highlight"
+        android:layout_marginTop="20dp"
+        android:id="@+id/edit2"/>
+</LinearLayout>
+</LinearLayout>

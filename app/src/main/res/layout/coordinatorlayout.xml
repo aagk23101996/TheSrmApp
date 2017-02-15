@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:id="@+id/app"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/collapse"
+        app:contentScrim="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        app:expandedTitleMarginStart="48dp"
+        android:fitsSystemWindows="true"
+        app:expandedTitleMarginEnd="64dp"
+        android:background="#691A99"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/tool"
+            app:layout_collapseMode="pin"
+            android:layout_height="?attr/actionBarSize"
+            ></android.support.v7.widget.Toolbar>
+    </android.support.design.widget.CollapsingToolbarLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#7A1EA1"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="#FFFFFF"
+                android:text="Add Subjects"/>
+        </FrameLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+
+
+        <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent"
+        android:id="@+id/recycle"
+        ></android.support.v7.widget.RecyclerView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/empty_view"
+        android:text="Press the + button to add a subject"/>
+
+    <android.support.design.widget.FloatingActionButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_anchor="@+id/app"
+    app:layout_anchorGravity="bottom|end|right"
+    android:clickable="true"
+        app:backgroundTint="#68EFAD"
+    android:src="@drawable/ic_action_name"
+    android:tint="#004D40"
+    android:id="@+id/fab"
+    android:onClick="fab"
+    android:layout_margin="16dp"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

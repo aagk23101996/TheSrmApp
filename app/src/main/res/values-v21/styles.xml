@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="AppThemeSub" parent="Theme.AppCompat.NoActionBar">
+    <item name="colorPrimary">#3F51B5</item>
+    <item name="colorPrimaryDark">#303F9f</item>
+    <item name="colorAccent">#FF4081</item>
+
+</style>
+    <!-- Base application theme. -->
+
+        <!-- Customize your theme here. -->
+        <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+            <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+            <item name="colorPrimary">#673AB7</item>
+            <item name="colorPrimaryDark">#512DA8</item>
+            <item name="colorAccent">#FF4081</item>
+            <item name="android:statusBarColor">@android:color/transparent</item>
+        </style>
+
+
+<style name="AppTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">#673AB7</item>
+    <item name="colorPrimaryDark">#512DA8</item>
+    <item name="colorAccent">#FF4081</item>
+   <item name="android:windowEnterTransition">@transition/sharedelement</item>
+</style>
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#F50057</item>
+        <item name="colorPrimaryDark">#F50057</item>
+        <item name="colorAccent">#FF4081</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>
